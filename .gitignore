@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+.npm-cache/
+
+# Environment / secrets
+.env
+backend/.env
+
+# Build output
+frontend/dist/
+
+# Local tooling and database data
+.tools/mysql/data/
+.tools/mysql-*.zip
+.tools/mysqld*.log
+*.log
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
