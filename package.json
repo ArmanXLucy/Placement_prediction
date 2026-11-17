@@ -20,5 +20,8 @@
     "build": "npm --workspace frontend run build",
     "vercel-build": "npm run build",
     "start": "npm --workspace backend start"
+  },
+  "optionalDependencies": {
+    "@rolldown/binding-linux-x64-gnu": "1.2.19"
   }
 }
