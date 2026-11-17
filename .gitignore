@@ -9,10 +9,11 @@ backend/.env
 # Build output
 frontend/dist/
 
+# Vercel
+.vercel/
+
 # Local tooling and database data
-.tools/mysql/data/
-.tools/mysql-*.zip
-.tools/mysqld*.log
+.tools/
 *.log
 
 # Editor / OS

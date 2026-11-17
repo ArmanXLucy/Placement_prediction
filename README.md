@@ -51,8 +51,9 @@ recommends jobs ranked by real skill overlap. Built with **MySQL 8**, **Node.js/
 - MySQL 8 — either the bundled copy in `.tools/mysql` or your own installation
 
 ### 1. Install dependencies
+This is an npm workspaces monorepo, so one install covers the API and the web app:
 ```bash
-npm run install:all
+npm install
 ```
 
 ### 2. Start MySQL
@@ -73,6 +74,7 @@ DB_PORT=3306
 DB_USER=root
 DB_PASSWORD=
 DB_NAME=placement_db
+DB_SSL=false          # set true for hosted MySQL that requires TLS
 JWT_SECRET=change_this_secret
 JWT_EXPIRES_IN=7d
 PORT=5000
@@ -116,7 +118,7 @@ From the project root:
 
 | Command | What it does |
 |---------|--------------|
-| `npm run install:all` | Install backend and frontend dependencies |
+| `npm run install:all` | Install backend and frontend dependencies (alias for `npm install`) |
 | `npm run db:start` | Start the bundled MySQL server |
 | `npm run db:stop` | Gracefully stop MySQL |
 | `npm run db:setup` | Apply schema/views/triggers/procedures (resets the database) |
@@ -141,10 +143,72 @@ Open **http://localhost:5000**.
 
 ---
 
+## Deploying to Vercel
+
+The repository is already shaped for Vercel: `api/index.js` exports the Express app
+as a serverless function, Vercel builds `frontend/dist` as the static site, and
+`vercel.json` routes `/api/*` to the function and everything else to the SPA.
+
+### 1. Create a hosted MySQL database
+Vercel functions are stateless, so the local MySQL in `.tools/mysql` cannot be used.
+Create a hosted MySQL 8 database (Aiven, TiDB Cloud, Railway, Clever Cloud, …) and
+import the schema from `database/`:
+
+```bash
+mysql -h <HOST> -P <PORT> -u <USER> -p <DB_NAME> < database/schema.sql
+mysql -h <HOST> -P <PORT> -u <USER> -p <DB_NAME> < database/views.sql
+mysql -h <HOST> -P <PORT> -u <USER> -p <DB_NAME> < database/triggers.sql
+mysql -h <HOST> -P <PORT> -u <USER> -p <DB_NAME> < database/procedures.sql
+```
+
+Seed data and the trained model (`backend/src/ml/model.json`) are already in the repo.
+To seed a completely empty database you can point `backend/.env` at the hosted
+database and run `npm run seed` locally. If your provider requires TLS, add `DB_SSL=true`.
+
+### 2. Import the repo into Vercel
+1. Push this repository to GitHub/GitLab/Bitbucket.
+2. In Vercel choose **Add New → Project → Import** the repository.
+3. Keep the **Root Directory** as the repository root. Do **not** change the
+   framework preset — `vercel.json` sets the build command, output directory and routing.
+4. Add the environment variables below for Production (and Preview if wanted):
+
+| Variable | Value |
+|----------|-------|
+| `DB_HOST` | hosted MySQL host |
+| `DB_PORT` | hosted MySQL port (often `3306` or `25060`) |
+| `DB_USER` | database user |
+| `DB_PASSWORD` | database password |
+| `DB_NAME` | database name |
+| `DB_SSL` | `true` when the provider requires TLS |
+| `JWT_SECRET` | a long random string |
+| `JWT_EXPIRES_IN` | `7d` (optional) |
+
+5. Click **Deploy**. `vercel.json` runs `npm install` and `npm run build`, then deploys:
+   - `/` and client routes → `frontend/dist` (React SPA)
+   - `/api/*` → `api/index.js` (Express serverless function)
+
+Open `https://<project>.vercel.app/api/health` to confirm the API can reach MySQL.
+
+### Deploying with the Vercel CLI (optional)
+```bash
+npm i -g vercel
+vercel            # first run links the project and creates a preview
+vercel --prod     # production deployment
+```
+
+> Note: the serverless function keeps a small MySQL pool (3 connections by default;
+> override with `DB_POOL_SIZE`). Use a provider that allows connections from Vercel's
+> dynamic IPs, or enable its "allow public access" option.
+
+---
+
 ## Project structure
 
 ```
 DBMS Project/
+├── api/
+│   └── index.js            # Vercel serverless entry point (exports the Express app)
+├── vercel.json             # build, routing and function config for Vercel
 ├── database/
 │   ├── schema.sql          # tables, constraints, indexes
 │   ├── views.sql           # v_eligible_jobs, v_job_match, v_placement_stats

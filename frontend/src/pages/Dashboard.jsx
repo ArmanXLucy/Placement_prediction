@@ -516,7 +516,7 @@ export default function Dashboard() {
         <Alert type="error">
           {error}
           <p className="mt-2 text-xs">
-            Make sure the backend is running on port 5000 and the database has been seeded.
+            Check that the API is reachable and the database has been set up and seeded.
           </p>
         </Alert>
       </div>

@@ -201,8 +201,15 @@ function saveModel(model) {
 }
 
 function loadModel() {
-  if (!fs.existsSync(MODEL_PATH)) return null;
+  // Prefer require() so bundlers (e.g. Vercel/@vercel/nft) include model.json
+  // in the serverless function automatically.
   try {
+    return require(MODEL_PATH);
+  } catch {
+    // Fall back to the filesystem for freshly trained models.
+  }
+  try {
+    if (!fs.existsSync(MODEL_PATH)) return null;
     return JSON.parse(fs.readFileSync(MODEL_PATH, 'utf8'));
   } catch {
     return null;

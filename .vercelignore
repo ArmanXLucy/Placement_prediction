@@ -1,0 +1,8 @@
+.git
+.tools
+.npm-cache
+Project_report
+docs
+.env
+backend/.env
+*.log
