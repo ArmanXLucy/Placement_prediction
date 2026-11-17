@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="950" viewBox="0 0 1700 950" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1F4037"/></marker>
+<marker id="arrow-coral" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#E76F51"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#737A74"/></marker>
+<marker id="arrow-dark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#252B28"/></marker>
+<filter id="shadow" x="-8%" y="-8%" width="116%" height="120%"><feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#1F4037" flood-opacity="0.10"/></filter>
+</defs>
+<rect x="0" y="0" width="1700" height="950" rx="12" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="850.0" y="46" font-size="36" font-weight="700" fill="#1F4037" text-anchor="middle">DFD Level 0</text>
+<text x="850.0" y="78" font-size="19" font-weight="400" fill="#737A74" text-anchor="middle">The complete system as one process with six principal data stores</text>
+<line x1="70" y1="98" x2="1630" y2="98" stroke="#D8D8CF" stroke-width="1.5"/>
+<text x="1630" y="932" font-size="14" font-weight="400" fill="#737A74" text-anchor="end">Placement Prediction System  |  Project Report</text>
+<circle cx="150" cy="260" r="16" fill="#FFFFFF" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="150" y1="276" x2="150" y2="322" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="125" y1="292" x2="175" y2="292" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="150" y1="322" x2="127" y2="356" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="150" y1="322" x2="173" y2="356" stroke="#1F4037" stroke-width="2.5"/>
+<text x="150" y="382" font-size="19" font-weight="700" fill="#1F4037" text-anchor="middle">Student</text>
+<circle cx="1550" cy="260" r="16" fill="#FFFFFF" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="1550" y1="276" x2="1550" y2="322" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="1525" y1="292" x2="1575" y2="292" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="1550" y1="322" x2="1527" y2="356" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="1550" y1="322" x2="1573" y2="356" stroke="#1F4037" stroke-width="2.5"/>
+<text x="1550" y="382" font-size="19" font-weight="700" fill="#1F4037" text-anchor="middle">Administrator</text>
+<rect x="650" y="180" width="400" height="220" rx="30" fill="#EEF3EF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="850" y="260" font-size="44" font-weight="700" fill="#1F4037" text-anchor="middle">0</text>
+<text x="850" y="300" font-size="24" font-weight="700" fill="#1F4037" text-anchor="middle">Placement Prediction System</text>
+<text x="850" y="332" font-size="16" font-weight="400" fill="#737A74" text-anchor="middle">authenticate · match · predict · track</text>
+<line x1="215" y1="300" x2="648" y2="300" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="431.5" y="286" font-size="14" font-weight="600" fill="#1F4037" text-anchor="middle">login, profile, skills, apply</text>
+<line x1="648" y1="375" x2="215" y2="375" stroke="#E76F51" stroke-width="2.2" marker-end="url(#arrow-coral)"/>
+<text x="431.5" y="393" font-size="14" font-weight="600" fill="#E76F51" text-anchor="middle">predictions, recommendations</text>
+<line x1="1485" y1="300" x2="1052" y2="300" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="1268.5" y="286" font-size="14" font-weight="600" fill="#1F4037" text-anchor="middle">job data, status updates</text>
+<line x1="1052" y1="375" x2="1485" y2="375" stroke="#E76F51" stroke-width="2.2" marker-end="url(#arrow-coral)"/>
+<text x="1268.5" y="393" font-size="14" font-weight="600" fill="#E76F51" text-anchor="middle">analytics, applicant queue</text>
+<rect x="80" y="610" width="240" height="125" rx="10" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<line x1="142" y1="610" x2="142" y2="735" stroke="#1F4037" stroke-width="2"/>
+<text x="111" y="680" font-size="22" font-weight="700" fill="#1F4037" text-anchor="middle">D1</text>
+<text x="156" y="652" font-size="18" font-weight="700" fill="#1F4037" text-anchor="start">Users</text>
+<text x="156" y="682" font-size="14" font-weight="400" fill="#737A74" text-anchor="start">credentials, role</text>
+<text x="156" y="706" font-size="13" font-weight="500" fill="#E76F51" text-anchor="start">read / write</text>
+<rect x="330" y="610" width="240" height="125" rx="10" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<line x1="392" y1="610" x2="392" y2="735" stroke="#1F4037" stroke-width="2"/>
+<text x="361" y="680" font-size="22" font-weight="700" fill="#1F4037" text-anchor="middle">D2</text>
+<text x="406" y="652" font-size="18" font-weight="700" fill="#1F4037" text-anchor="start">Students & skills</text>
+<text x="406" y="682" font-size="14" font-weight="400" fill="#737A74" text-anchor="start">profile, CGPA, proficiency</text>
+<text x="406" y="706" font-size="13" font-weight="500" fill="#E76F51" text-anchor="start">read / write</text>
+<rect x="580" y="610" width="240" height="125" rx="10" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<line x1="642" y1="610" x2="642" y2="735" stroke="#1F4037" stroke-width="2"/>
+<text x="611" y="680" font-size="22" font-weight="700" fill="#1F4037" text-anchor="middle">D3</text>
+<text x="656" y="652" font-size="18" font-weight="700" fill="#1F4037" text-anchor="start">Jobs & companies</text>
+<text x="656" y="682" font-size="14" font-weight="400" fill="#737A74" text-anchor="start">requirements, package</text>
+<text x="656" y="706" font-size="13" font-weight="500" fill="#E76F51" text-anchor="start">read / write</text>
+<rect x="830" y="610" width="240" height="125" rx="10" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<line x1="892" y1="610" x2="892" y2="735" stroke="#1F4037" stroke-width="2"/>
+<text x="861" y="680" font-size="22" font-weight="700" fill="#1F4037" text-anchor="middle">D4</text>
+<text x="906" y="652" font-size="18" font-weight="700" fill="#1F4037" text-anchor="start">Applications</text>
+<text x="906" y="682" font-size="14" font-weight="400" fill="#737A74" text-anchor="start">status, audit log</text>
+<text x="906" y="706" font-size="13" font-weight="500" fill="#E76F51" text-anchor="start">read / write</text>
+<rect x="1080" y="610" width="240" height="125" rx="10" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<line x1="1142" y1="610" x2="1142" y2="735" stroke="#1F4037" stroke-width="2"/>
+<text x="1111" y="680" font-size="22" font-weight="700" fill="#1F4037" text-anchor="middle">D5</text>
+<text x="1156" y="652" font-size="18" font-weight="700" fill="#1F4037" text-anchor="start">History & predictions</text>
+<text x="1156" y="682" font-size="14" font-weight="400" fill="#737A74" text-anchor="start">training rows, probabilities</text>
+<text x="1156" y="706" font-size="13" font-weight="500" fill="#E76F51" text-anchor="start">read / write</text>
+<rect x="1330" y="610" width="240" height="125" rx="10" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<line x1="1392" y1="610" x2="1392" y2="735" stroke="#1F4037" stroke-width="2"/>
+<text x="1361" y="680" font-size="22" font-weight="700" fill="#1F4037" text-anchor="middle">D6</text>
+<text x="1406" y="652" font-size="18" font-weight="700" fill="#1F4037" text-anchor="start">Recommendations</text>
+<text x="1406" y="682" font-size="14" font-weight="400" fill="#737A74" text-anchor="start">match %, matched skills</text>
+<text x="1406" y="706" font-size="13" font-weight="500" fill="#E76F51" text-anchor="start">read / write</text>
+<line x1="850" y1="400" x2="850" y2="525" stroke="#1F4037" stroke-width="2.4"/>
+<line x1="200" y1="525" x2="1450" y2="525" stroke="#1F4037" stroke-width="2.4"/>
+<line x1="200" y1="525" x2="200" y2="608" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<line x1="450" y1="525" x2="450" y2="608" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<line x1="700" y1="525" x2="700" y2="608" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<line x1="950" y1="525" x2="950" y2="608" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<line x1="1200" y1="525" x2="1200" y2="608" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<line x1="1450" y1="525" x2="1450" y2="608" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="850" y="510" font-size="15" font-weight="600" fill="#1F4037" text-anchor="middle">read / write data bus</text>
+<text x="850" y="865" font-size="15" font-weight="400" fill="#737A74" text-anchor="middle">Level 1 decomposes Process 0 into authentication, profile, catalogue, matching, prediction, application and analytics processes.</text>
+</svg>

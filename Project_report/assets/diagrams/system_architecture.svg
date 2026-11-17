@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="950" viewBox="0 0 1700 950" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1F4037"/></marker>
+<marker id="arrow-coral" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#E76F51"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#737A74"/></marker>
+<marker id="arrow-dark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#252B28"/></marker>
+<filter id="shadow" x="-8%" y="-8%" width="116%" height="120%"><feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#1F4037" flood-opacity="0.10"/></filter>
+</defs>
+<rect x="0" y="0" width="1700" height="950" rx="12" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="850.0" y="46" font-size="36" font-weight="700" fill="#1F4037" text-anchor="middle">Three-Tier System Architecture</text>
+<text x="850.0" y="78" font-size="19" font-weight="400" fill="#737A74" text-anchor="middle">Presentation, application and data layers of the Placement Prediction System</text>
+<line x1="70" y1="98" x2="1630" y2="98" stroke="#D8D8CF" stroke-width="1.5"/>
+<text x="1630" y="932" font-size="14" font-weight="400" fill="#737A74" text-anchor="end">Placement Prediction System  |  Project Report</text>
+<circle cx="90" cy="300" r="16" fill="#FFFFFF" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="90" y1="316" x2="90" y2="362" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="65" y1="332" x2="115" y2="332" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="90" y1="362" x2="67" y2="396" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="90" y1="362" x2="113" y2="396" stroke="#1F4037" stroke-width="2.5"/>
+<text x="90" y="422" font-size="19" font-weight="700" fill="#1F4037" text-anchor="middle">Student</text>
+<circle cx="90" cy="690" r="16" fill="#FFFFFF" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="90" y1="706" x2="90" y2="752" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="65" y1="722" x2="115" y2="722" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="90" y1="752" x2="67" y2="786" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="90" y1="752" x2="113" y2="786" stroke="#1F4037" stroke-width="2.5"/>
+<text x="90" y="812" font-size="19" font-weight="700" fill="#1F4037" text-anchor="middle">Administrator</text>
+<rect x="210" y="120" width="380" height="740" rx="20" fill="#EEF3EF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="400" y="158" font-size="25" font-weight="700" fill="#1F4037" text-anchor="middle">Presentation Layer</text>
+<text x="400" y="184" font-size="16" font-weight="400" fill="#737A74" text-anchor="middle">React 19 + Vite 8 SPA</text>
+<rect x="240" y="210" width="320" height="170" rx="12" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="400.0" y="241" font-size="21" font-weight="700" fill="#1F4037" text-anchor="middle">Student portal</text>
+<line x1="254" y1="255" x2="546" y2="255" stroke="#1F4037" stroke-width="1"/>
+<text x="258" y="278" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">Login / registration</text>
+<text x="258" y="301" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">Profile and skills</text>
+<text x="258" y="324" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">Jobs, recommendations</text>
+<text x="258" y="347" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">Prediction, applications</text>
+<rect x="240" y="410" width="320" height="170" rx="12" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="400.0" y="441" font-size="21" font-weight="700" fill="#1F4037" text-anchor="middle">Administrator portal</text>
+<line x1="254" y1="455" x2="546" y2="455" stroke="#1F4037" stroke-width="1"/>
+<text x="258" y="478" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">Placement dashboard</text>
+<text x="258" y="501" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">Job catalogue</text>
+<text x="258" y="524" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">Application review</text>
+<text x="258" y="547" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">Branch and skill analytics</text>
+<rect x="240" y="610" width="320" height="170" rx="12" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="400.0" y="641" font-size="21" font-weight="700" fill="#1F4037" text-anchor="middle">Shared UI services</text>
+<line x1="254" y1="655" x2="546" y2="655" stroke="#1F4037" stroke-width="1"/>
+<text x="258" y="678" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">Axios client + JWT interceptor</text>
+<text x="258" y="701" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">React Router protected routes</text>
+<text x="258" y="724" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">Tailwind CSS + Recharts</text>
+<rect x="650" y="120" width="430" height="740" rx="20" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="865" y="158" font-size="25" font-weight="700" fill="#1F4037" text-anchor="middle">Application Layer</text>
+<text x="865" y="184" font-size="16" font-weight="400" fill="#737A74" text-anchor="middle">Node.js 22 + Express 5 REST API</text>
+<rect x="680" y="210" width="370" height="150" rx="12" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="865.0" y="241" font-size="20" font-weight="700" fill="#1F4037" text-anchor="middle">API routes and middleware</text>
+<line x1="694" y1="255" x2="1036" y2="255" stroke="#1F4037" stroke-width="1"/>
+<text x="698" y="276" font-size="16" font-weight="400" fill="#252B28" text-anchor="start">/api/auth  /api/students  /api/jobs</text>
+<text x="698" y="299" font-size="16" font-weight="400" fill="#252B28" text-anchor="start">/api/applications  /api/analytics</text>
+<text x="698" y="322" font-size="16" font-weight="400" fill="#252B28" text-anchor="start">JWT auth · role guards · validation</text>
+<rect x="680" y="390" width="370" height="150" rx="12" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="865.0" y="421" font-size="20" font-weight="700" fill="#1F4037" text-anchor="middle">Controllers and models</text>
+<line x1="694" y1="435" x2="1036" y2="435" stroke="#1F4037" stroke-width="1"/>
+<text x="698" y="456" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">Auth, profile, job, application</text>
+<text x="698" y="479" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">recommendation, prediction, analytics</text>
+<rect x="680" y="570" width="370" height="150" rx="12" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="865.0" y="601" font-size="20" font-weight="700" fill="#1F4037" text-anchor="middle">Matching and prediction</text>
+<line x1="694" y1="615" x2="1036" y2="615" stroke="#1F4037" stroke-width="1"/>
+<text x="698" y="636" font-size="16" font-weight="400" fill="#252B28" text-anchor="start">sp_recommend_jobs skill matching</text>
+<text x="698" y="659" font-size="16" font-weight="400" fill="#252B28" text-anchor="start">Logistic-regression inference</text>
+<text x="698" y="682" font-size="16" font-weight="400" fill="#252B28" text-anchor="start">Eligibility and deadline rules</text>
+<rect x="680" y="750" width="370" height="80" rx="12" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="865.0" y="781" font-size="19" font-weight="700" fill="#1F4037" text-anchor="middle">Security</text>
+<line x1="694" y1="795" x2="1036" y2="795" stroke="#1F4037" stroke-width="1"/>
+<text x="698" y="812" font-size="16" font-weight="400" fill="#252B28" text-anchor="start">bcrypt · JWT · validation · error handling</text>
+<rect x="1140" y="120" width="420" height="740" rx="20" fill="#EDF2F6" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1350" y="158" font-size="25" font-weight="700" fill="#1F4037" text-anchor="middle">Data Layer</text>
+<text x="1350" y="184" font-size="16" font-weight="400" fill="#737A74" text-anchor="middle">MySQL 8.0.40 + model artefact</text>
+<path d="M 1170 226 L 1170 414 Q 1170 430 1186 430 L 1514 430 Q 1530 430 1530 414 L 1530 226 Q 1530 210 1514 210 L 1186 210 Q 1170 210 1170 226 Z" fill="#EEF3EF" stroke="#1F4037" stroke-width="2"/>
+<ellipse cx="1350.0" cy="226" rx="180.0" ry="16" fill="#FFFFFF" stroke="#1F4037" stroke-width="2"/>
+<text x="1350.0" y="258" font-size="21" font-weight="700" fill="#1F4037" text-anchor="middle">placement_db</text>
+<text x="1188" y="288" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">12 normalized tables</text>
+<text x="1188" y="311" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">3 analytical views</text>
+<text x="1188" y="334" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">2 triggers  ·  2 procedures</text>
+<text x="1188" y="357" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">indexes and constraints</text>
+<rect x="1170" y="470" width="360" height="160" rx="12" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1350.0" y="501" font-size="21" font-weight="700" fill="#1F4037" text-anchor="middle">model.json</text>
+<line x1="1184" y1="515" x2="1516" y2="515" stroke="#1F4037" stroke-width="1"/>
+<text x="1188" y="536" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">6 features</text>
+<text x="1188" y="559" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">weights + bias</text>
+<text x="1188" y="582" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">means + standard deviations</text>
+<text x="1188" y="605" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">evaluation metrics</text>
+<rect x="1170" y="670" width="360" height="140" rx="12" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1350.0" y="701" font-size="21" font-weight="700" fill="#1F4037" text-anchor="middle">Audit artefacts</text>
+<line x1="1184" y1="715" x2="1516" y2="715" stroke="#1F4037" stroke-width="1"/>
+<text x="1188" y="736" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">application_log</text>
+<text x="1188" y="759" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">placement_history</text>
+<text x="1188" y="782" font-size="17" font-weight="400" fill="#252B28" text-anchor="start">prediction and recommendation rows</text>
+<line x1="140" y1="330" x2="208" y2="330" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="174.0" y="318" font-size="14" font-weight="600" fill="#1F4037" text-anchor="middle">HTTPS</text>
+<line x1="140" y1="720" x2="208" y2="720" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="174.0" y="708" font-size="14" font-weight="600" fill="#1F4037" text-anchor="middle">HTTPS</text>
+<line x1="590" y1="330" x2="648" y2="330" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="619.0" y="318" font-size="14" font-weight="600" fill="#1F4037" text-anchor="middle">JSON / REST</text>
+<line x1="590" y1="720" x2="648" y2="720" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="619.0" y="708" font-size="14" font-weight="600" fill="#1F4037" text-anchor="middle">JSON / REST</text>
+<line x1="1082" y1="330" x2="1138" y2="330" stroke="#E76F51" stroke-width="2.2" marker-end="url(#arrow-coral)"/>
+<text x="1110.0" y="318" font-size="14" font-weight="600" fill="#E76F51" text-anchor="middle">SQL</text>
+<line x1="1082" y1="720" x2="1138" y2="720" stroke="#E76F51" stroke-width="2.2" marker-end="url(#arrow-coral)"/>
+<text x="1110.0" y="708" font-size="14" font-weight="600" fill="#E76F51" text-anchor="middle">SQL</text>
+<line x1="1350" y1="430" x2="1350" y2="468" stroke="#E76F51" stroke-width="2.2" marker-end="url(#arrow-coral)"/>
+<text x="1405" y="454" font-size="13" font-weight="600" fill="#E76F51" text-anchor="middle">load</text>
+<text x="850" y="905" font-size="15" font-weight="400" fill="#737A74" text-anchor="middle">In production Express serves the built SPA and the API from the same origin; Vite proxies /api during development.</text>
+</svg>

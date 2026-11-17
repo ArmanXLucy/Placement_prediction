@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1F4037"/></marker>
+<marker id="arrow-coral" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#E76F51"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#737A74"/></marker>
+<marker id="arrow-dark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#252B28"/></marker>
+<filter id="shadow" x="-8%" y="-8%" width="116%" height="120%"><feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#1F4037" flood-opacity="0.10"/></filter>
+</defs>
+<rect x="0" y="0" width="1500" height="900" rx="12" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="750.0" y="46" font-size="36" font-weight="700" fill="#1F4037" text-anchor="middle">System Context Diagram</text>
+<text x="750.0" y="78" font-size="19" font-weight="400" fill="#737A74" text-anchor="middle">External entities and the high-level information exchanged with the placement prediction service</text>
+<line x1="70" y1="98" x2="1430" y2="98" stroke="#D8D8CF" stroke-width="1.5"/>
+<text x="1430" y="882" font-size="14" font-weight="400" fill="#737A74" text-anchor="end">Placement Prediction System  |  Project Report</text>
+<circle cx="175" cy="380" r="16" fill="#FFFFFF" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="175" y1="396" x2="175" y2="442" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="150" y1="412" x2="200" y2="412" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="175" y1="442" x2="152" y2="476" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="175" y1="442" x2="198" y2="476" stroke="#1F4037" stroke-width="2.5"/>
+<text x="175" y="502" font-size="19" font-weight="700" fill="#1F4037" text-anchor="middle">Student</text>
+<circle cx="1325" cy="380" r="16" fill="#FFFFFF" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="1325" y1="396" x2="1325" y2="442" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="1300" y1="412" x2="1350" y2="412" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="1325" y1="442" x2="1302" y2="476" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="1325" y1="442" x2="1348" y2="476" stroke="#1F4037" stroke-width="2.5"/>
+<text x="1325" y="502" font-size="19" font-weight="700" fill="#1F4037" text-anchor="middle">Administrator / Placement Cell</text>
+<rect x="555" y="290" width="390" height="300" rx="30" fill="#EEF3EF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="750" y="370" font-size="28" font-weight="700" fill="#1F4037" text-anchor="middle">Placement Prediction</text>
+<text x="750" y="405" font-size="28" font-weight="700" fill="#1F4037" text-anchor="middle">System</text>
+<text x="750" y="445" font-size="18" font-weight="600" fill="#737A74" text-anchor="middle">Process 0</text>
+<text x="750" y="475" font-size="16" font-weight="400" fill="#737A74" text-anchor="middle">AI-assisted placement support</text>
+<line x1="240" y1="350" x2="553" y2="350" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="396.5" y="336" font-size="15" font-weight="600" fill="#1F4037" text-anchor="middle">login, profile, skills, applications</text>
+<line x1="553" y1="435" x2="240" y2="435" stroke="#E76F51" stroke-width="2.2" marker-end="url(#arrow-coral)"/>
+<text x="396.5" y="453" font-size="15" font-weight="600" fill="#E76F51" text-anchor="middle">dashboard, recommendations, predictions</text>
+<line x1="947" y1="350" x2="1260" y2="350" stroke="#E76F51" stroke-width="2.2" marker-end="url(#arrow-coral)"/>
+<text x="1103.5" y="336" font-size="15" font-weight="600" fill="#E76F51" text-anchor="middle">analytics and applicant queue</text>
+<line x1="1260" y1="435" x2="947" y2="435" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="1103.5" y="453" font-size="15" font-weight="600" fill="#1F4037" text-anchor="middle">job records and status decisions</text>
+<text x="750" y="760" font-size="15" font-weight="400" fill="#737A74" text-anchor="middle">Database stores, the ML model and the REST API are internal to Process 0 and are expanded in DFD Level 1.</text>
+</svg>

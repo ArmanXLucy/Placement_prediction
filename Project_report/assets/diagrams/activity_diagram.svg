@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1550" height="1320" viewBox="0 0 1550 1320" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1F4037"/></marker>
+<marker id="arrow-coral" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#E76F51"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#737A74"/></marker>
+<marker id="arrow-dark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#252B28"/></marker>
+<filter id="shadow" x="-8%" y="-8%" width="116%" height="120%"><feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#1F4037" flood-opacity="0.10"/></filter>
+</defs>
+<rect x="0" y="0" width="1550" height="1320" rx="12" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="775.0" y="46" font-size="36" font-weight="700" fill="#1F4037" text-anchor="middle">Activity Diagram — Student Placement Journey</text>
+<text x="775.0" y="78" font-size="19" font-weight="400" fill="#737A74" text-anchor="middle">Implemented path from login and profile setup to the placement trigger</text>
+<line x1="70" y1="98" x2="1480" y2="98" stroke="#D8D8CF" stroke-width="1.5"/>
+<text x="1480" y="1302" font-size="14" font-weight="400" fill="#737A74" text-anchor="end">Placement Prediction System  |  Project Report</text>
+<circle cx="770" cy="140" r="16" fill="#1F4037"/>
+<text x="798" y="146" font-size="17" font-weight="600" fill="#1F4037" text-anchor="start">Start</text>
+<rect x="510" y="180" width="520" height="60" rx="28" fill="#EEF3EF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="770" y="217" font-size="19" font-weight="600" fill="#252B28" text-anchor="middle">Open application and log in</text>
+<rect x="510" y="260" width="520" height="60" rx="28" fill="#EEF3EF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="770" y="297" font-size="19" font-weight="600" fill="#252B28" text-anchor="middle">Load student dashboard</text>
+<rect x="510" y="340" width="520" height="60" rx="28" fill="#EEF3EF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="770" y="377" font-size="19" font-weight="600" fill="#252B28" text-anchor="middle">Maintain profile, skills and academic details</text>
+<rect x="510" y="420" width="520" height="60" rx="28" fill="#EEF3EF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="770" y="457" font-size="19" font-weight="600" fill="#252B28" text-anchor="middle">Browse jobs or recommendations</text>
+<polygon points="770,495.0 1030.0,550 770,605.0 510.0,550" fill="#FBEDE8" stroke="#E76F51" stroke-width="2.2"/>
+<text x="770" y="545.84" font-size="16" font-weight="600" fill="#252B28" text-anchor="middle">Eligibility rules met?</text>
+<text x="770" y="565.36" font-size="16" font-weight="600" fill="#252B28" text-anchor="middle">CGPA · backlogs · active deadline</text>
+<rect x="1110" y="505" width="330" height="90" rx="16" fill="#FBEDE8" stroke="#E76F51" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1275" y="538" font-size="16" font-weight="600" fill="#252B28" text-anchor="middle">Show requirements and</text>
+<text x="1275" y="563" font-size="16" font-weight="600" fill="#252B28" text-anchor="middle">suggest profile improvements</text>
+<line x1="1030" y1="550" x2="1108" y2="550" stroke="#E76F51" stroke-width="2.2" marker-end="url(#arrow-coral)"/>
+<text x="1069.0" y="535" font-size="14" font-weight="600" fill="#E76F51" text-anchor="middle">No</text>
+<line x1="770" y1="605" x2="770" y2="655" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="798" y="638" font-size="14" font-weight="600" fill="#1F4037" text-anchor="middle">Yes</text>
+<rect x="510" y="655" width="520" height="62" rx="28" fill="#EEF3EF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="770" y="692" font-size="19" font-weight="600" fill="#252B28" text-anchor="middle">Submit application (status = applied)</text>
+<rect x="510" y="745" width="520" height="62" rx="28" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="770" y="782" font-size="19" font-weight="600" fill="#252B28" text-anchor="middle">Administrator reviews application</text>
+<polygon points="770,820.0 1030.0,875 770,930.0 510.0,875" fill="#FBEDE8" stroke="#E76F51" stroke-width="2.2"/>
+<text x="770" y="870.84" font-size="16" font-weight="600" fill="#252B28" text-anchor="middle">Screening outcome</text>
+<text x="770" y="890.36" font-size="16" font-weight="600" fill="#252B28" text-anchor="middle">shortlist / interview / reject</text>
+<rect x="1110" y="830" width="330" height="90" rx="16" fill="#FBEDE8" stroke="#E76F51" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1275" y="862" font-size="17" font-weight="600" fill="#252B28" text-anchor="middle">Status = rejected</text>
+<text x="1275" y="887" font-size="14" font-weight="400" fill="#737A74" text-anchor="middle">shown in the tracker</text>
+<line x1="1030" y1="875" x2="1108" y2="875" stroke="#E76F51" stroke-width="2.2" marker-end="url(#arrow-coral)"/>
+<text x="1069.0" y="860" font-size="14" font-weight="600" fill="#E76F51" text-anchor="middle">reject</text>
+<line x1="770" y1="930" x2="770" y2="970" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="890" y="952" font-size="14" font-weight="600" fill="#1F4037" text-anchor="middle">shortlist / interview</text>
+<polygon points="770,970.0 995.0,1020 770,1070.0 545.0,1020" fill="#FBEDE8" stroke="#E76F51" stroke-width="2.2"/>
+<text x="770" y="1025.95" font-size="17" font-weight="600" fill="#252B28" text-anchor="middle">Selected by company?</text>
+<rect x="455" y="1080" width="270" height="70" rx="16" fill="#FBEDE8" stroke="#E76F51" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="590" y="1122" font-size="16" font-weight="600" fill="#252B28" text-anchor="middle">Remain in pipeline</text>
+<path d="M 545 1020 L 455 1020 L 455 1078" fill="none" stroke="#E76F51" stroke-width="2.2" marker-end="url(#arrow-coral)"/>
+<text x="475" y="1005" font-size="14" font-weight="600" fill="#E76F51" text-anchor="start">No</text>
+<rect x="1100" y="1035" width="360" height="100" rx="16" fill="#EEF3EF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1280" y="1065" font-size="16" font-weight="600" fill="#252B28" text-anchor="middle">Trigger marks student placed</text>
+<text x="1280" y="1090" font-size="14" font-weight="400" fill="#737A74" text-anchor="middle">writes placement_history + log</text>
+<line x1="995" y1="1020" x2="1098" y2="1020" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="1046.5" y="1005" font-size="14" font-weight="600" fill="#1F4037" text-anchor="middle">Yes</text>
+<circle cx="1280" cy="1215" r="16" fill="#1F4037"/>
+<circle cx="1280" cy="1215" r="9" fill="#FFFFFF" stroke="#1F4037" stroke-width="3"/>
+<text x="1305" y="1221" font-size="17" font-weight="600" fill="#1F4037" text-anchor="start">End</text>
+<line x1="1280" y1="1135" x2="1280" y2="1197" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="770" y="1275" font-size="14" font-weight="400" fill="#737A74" text-anchor="middle">This path mirrors the implemented API checks and the AFTER UPDATE trigger on applications.</text>
+</svg>

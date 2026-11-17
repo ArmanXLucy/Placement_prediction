@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1F4037"/></marker>
+<marker id="arrow-coral" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#E76F51"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#737A74"/></marker>
+<marker id="arrow-dark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#252B28"/></marker>
+<filter id="shadow" x="-8%" y="-8%" width="116%" height="120%"><feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#1F4037" flood-opacity="0.10"/></filter>
+</defs>
+<rect x="0" y="0" width="1800" height="1200" rx="12" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="900.0" y="46" font-size="36" font-weight="700" fill="#1F4037" text-anchor="middle">Class Diagram — Packages and Core Entities</text>
+<text x="900.0" y="78" font-size="19" font-weight="400" fill="#737A74" text-anchor="middle">Domain classes grouped by responsibility, with package-level relationships</text>
+<line x1="70" y1="98" x2="1730" y2="98" stroke="#D8D8CF" stroke-width="1.5"/>
+<text x="1730" y="1182" font-size="14" font-weight="400" fill="#737A74" text-anchor="end">Placement Prediction System  |  Project Report</text>
+<rect x="60" y="140" width="780" height="430" rx="18" fill="#EEF3EF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="90" y="172" font-size="21" font-weight="700" fill="#1F4037" text-anchor="start">Identity & Profile</text>
+<rect x="85" y="195" width="320" height="150" rx="8" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5"/>
+<rect x="85" y="195" width="320" height="30" rx="8" fill="#1F4037" stroke="#1F4037" stroke-width="1.5"/>
+<text x="97" y="216" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="start">User</text>
+<text x="97" y="247" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- id «PK»</text>
+<text x="97" y="267" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- email</text>
+<text x="97" y="287" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- password hash</text>
+<text x="97" y="307" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- role</text>
+<text x="97" y="327" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- created_at</text>
+<rect x="445" y="195" width="365" height="180" rx="8" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5"/>
+<rect x="445" y="195" width="365" height="30" rx="8" fill="#1F4037" stroke="#1F4037" stroke-width="1.5"/>
+<text x="457" y="216" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="start">Student</text>
+<text x="457" y="247" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- id «PK»</text>
+<text x="457" y="267" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- user_id «FK»</text>
+<text x="457" y="287" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- name, branch</text>
+<text x="457" y="307" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- cgpa, backlogs</text>
+<text x="457" y="327" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- projects, internships</text>
+<text x="457" y="347" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- is_placed</text>
+<rect x="85" y="375" width="320" height="160" rx="8" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5"/>
+<rect x="85" y="375" width="320" height="30" rx="8" fill="#1F4037" stroke="#1F4037" stroke-width="1.5"/>
+<text x="97" y="396" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="start">StudentSkill</text>
+<text x="97" y="427" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- student_id «PK/FK»</text>
+<text x="97" y="447" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- skill_id «PK/FK»</text>
+<text x="97" y="467" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- proficiency 1..5</text>
+<rect x="445" y="405" width="365" height="140" rx="8" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5"/>
+<rect x="445" y="405" width="365" height="30" rx="8" fill="#1F4037" stroke="#1F4037" stroke-width="1.5"/>
+<text x="457" y="426" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="start">Skill</text>
+<text x="457" y="457" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- id «PK»</text>
+<text x="457" y="477" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- name</text>
+<text x="457" y="497" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- category</text>
+<line x1="405" y1="250" x2="443" y2="250" stroke="#1F4037" stroke-width="2"/>
+<text x="412" y="238" font-size="12" font-weight="700" fill="#1F4037" text-anchor="start">1</text>
+<text x="435" y="238" font-size="12" font-weight="700" fill="#1F4037" text-anchor="end">1</text>
+<path d="M 625 375 L 625 355 L 245 355 L 245 373" fill="none" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="420" y="348" font-size="12" font-weight="600" fill="#1F4037" text-anchor="start">1 : *</text>
+<path d="M 627 470 L 627 485 L 405 485" fill="none" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="520" y="475" font-size="12" font-weight="600" fill="#1F4037" text-anchor="start">1 : *</text>
+<rect x="880" y="140" width="820" height="430" rx="18" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="910" y="172" font-size="21" font-weight="700" fill="#1F4037" text-anchor="start">Placement Catalogue</text>
+<rect x="905" y="195" width="350" height="150" rx="8" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5"/>
+<rect x="905" y="195" width="350" height="30" rx="8" fill="#1F4037" stroke="#1F4037" stroke-width="1.5"/>
+<text x="917" y="216" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="start">Company</text>
+<text x="917" y="247" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- id «PK»</text>
+<text x="917" y="267" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- name</text>
+<text x="917" y="287" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- description</text>
+<text x="917" y="307" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- website</text>
+<rect x="1295" y="195" width="380" height="195" rx="8" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5"/>
+<rect x="1295" y="195" width="380" height="30" rx="8" fill="#1F4037" stroke="#1F4037" stroke-width="1.5"/>
+<text x="1307" y="216" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="start">Job</text>
+<text x="1307" y="247" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- id «PK»</text>
+<text x="1307" y="267" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- company_id «FK»</text>
+<text x="1307" y="287" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- title, package_lpa</text>
+<text x="1307" y="307" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- location, min_cgpa</text>
+<text x="1307" y="327" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- max_backlogs, deadline</text>
+<text x="1307" y="347" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- status</text>
+<rect x="905" y="390" width="350" height="150" rx="8" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5"/>
+<rect x="905" y="390" width="350" height="30" rx="8" fill="#1F4037" stroke="#1F4037" stroke-width="1.5"/>
+<text x="917" y="411" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="start">JobSkill</text>
+<text x="917" y="442" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- job_id «PK/FK»</text>
+<text x="917" y="462" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- skill_id «PK/FK»</text>
+<text x="917" y="482" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- is_mandatory</text>
+<line x1="1255" y1="255" x2="1293" y2="255" stroke="#1F4037" stroke-width="2"/>
+<text x="1262" y="243" font-size="12" font-weight="700" fill="#1F4037" text-anchor="start">1</text>
+<text x="1285" y="243" font-size="14" font-weight="700" fill="#1F4037" text-anchor="end">*</text>
+<path d="M 1295 350 L 1270 350 L 1270 440 L 1257 440" fill="none" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="1290" y="390" font-size="12" font-weight="600" fill="#1F4037" text-anchor="start">1 : *</text>
+<rect x="60" y="620" width="780" height="430" rx="18" fill="#EEF3EF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="90" y="652" font-size="21" font-weight="700" fill="#1F4037" text-anchor="start">Applications & Audit</text>
+<rect x="85" y="675" width="365" height="200" rx="8" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5"/>
+<rect x="85" y="675" width="365" height="30" rx="8" fill="#1F4037" stroke="#1F4037" stroke-width="1.5"/>
+<text x="97" y="696" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="start">Application</text>
+<text x="97" y="727" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- id «PK»</text>
+<text x="97" y="747" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- student_id «FK»</text>
+<text x="97" y="767" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- job_id «FK»</text>
+<text x="97" y="787" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- status</text>
+<text x="97" y="807" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- applied_at</text>
+<text x="97" y="827" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- UNIQUE(student, job)</text>
+<rect x="505" y="675" width="300" height="170" rx="8" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5"/>
+<rect x="505" y="675" width="300" height="30" rx="8" fill="#1F4037" stroke="#1F4037" stroke-width="1.5"/>
+<text x="517" y="696" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="start">ApplicationLog</text>
+<text x="517" y="727" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- id «PK»</text>
+<text x="517" y="747" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- application_id</text>
+<text x="517" y="767" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- old_status</text>
+<text x="517" y="787" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- new_status</text>
+<text x="517" y="807" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- changed_at</text>
+<line x1="450" y1="760" x2="503" y2="760" stroke="#1F4037" stroke-width="2"/>
+<text x="458" y="748" font-size="12" font-weight="700" fill="#1F4037" text-anchor="start">1</text>
+<text x="495" y="748" font-size="14" font-weight="700" fill="#1F4037" text-anchor="end">*</text>
+<rect x="880" y="620" width="820" height="430" rx="18" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="910" y="652" font-size="21" font-weight="700" fill="#1F4037" text-anchor="start">Prediction & History</text>
+<rect x="905" y="675" width="350" height="170" rx="8" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5"/>
+<rect x="905" y="675" width="350" height="30" rx="8" fill="#1F4037" stroke="#1F4037" stroke-width="1.5"/>
+<text x="917" y="696" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="start">PlacementHistory</text>
+<text x="917" y="727" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- id «PK»</text>
+<text x="917" y="747" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- student_id «FK»</text>
+<text x="917" y="767" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- cgpa, skills_count</text>
+<text x="917" y="787" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- projects, internships</text>
+<text x="917" y="807" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- is_placed</text>
+<rect x="1295" y="675" width="380" height="150" rx="8" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5"/>
+<rect x="1295" y="675" width="380" height="30" rx="8" fill="#1F4037" stroke="#1F4037" stroke-width="1.5"/>
+<text x="1307" y="696" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="start">Prediction</text>
+<text x="1307" y="727" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- id «PK»</text>
+<text x="1307" y="747" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- student_id «FK»</text>
+<text x="1307" y="767" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- probability</text>
+<text x="1307" y="787" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- predicted_at</text>
+<rect x="905" y="875" width="350" height="145" rx="8" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5"/>
+<rect x="905" y="875" width="350" height="30" rx="8" fill="#1F4037" stroke="#1F4037" stroke-width="1.5"/>
+<text x="917" y="896" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="start">Recommendation</text>
+<text x="917" y="927" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- id «PK»</text>
+<text x="917" y="947" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- student_id, job_id</text>
+<text x="917" y="967" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- match_percent</text>
+<text x="917" y="987" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">- matched / missing skills</text>
+<line x1="842" y1="480" x2="878" y2="480" stroke="#E76F51" stroke-width="2.2" marker-end="url(#arrow-coral)"/>
+<text x="860" y="465" font-size="11" font-weight="600" fill="#E76F51" text-anchor="middle">Skill → JobSkill</text>
+<line x1="842" y1="535" x2="878" y2="690" stroke="#E76F51" stroke-width="2.2" marker-end="url(#arrow-coral)"/>
+<text x="800" y="610" font-size="12" font-weight="600" fill="#E76F51" text-anchor="middle">Student → Application</text>
+<line x1="842" y1="560" x2="878" y2="750" stroke="#E76F51" stroke-width="2.2" marker-end="url(#arrow-coral)"/>
+<text x="790" y="720" font-size="12" font-weight="600" fill="#E76F51" text-anchor="middle">Job → Application</text>
+<line x1="842" y1="345" x2="878" y2="660" stroke="#E76F51" stroke-width="2.2" marker-end="url(#arrow-coral)"/>
+<text x="720" y="840" font-size="11" font-weight="600" fill="#E76F51" text-anchor="middle">Student → History / Prediction / Recommendation</text>
+<line x1="842" y1="380" x2="878" y2="930" stroke="#E76F51" stroke-width="2.2" marker-end="url(#arrow-coral)"/>
+<text x="720" y="905" font-size="11" font-weight="600" fill="#E76F51" text-anchor="middle">Job → Recommendation</text>
+<line x1="842" y1="820" x2="878" y2="940" stroke="#737A74" stroke-width="2.2" stroke-dasharray="5 4" marker-end="url(#arrow-muted)"/>
+<text x="700" y="975" font-size="11" font-weight="600" fill="#737A74" text-anchor="middle">Application → placement history</text>
+<text x="900" y="1110" font-size="14" font-weight="400" fill="#737A74" text-anchor="middle">Cardinalities are shown on the package relationships. All foreign keys and unique constraints follow database/schema.sql.</text>
+<text x="900" y="1140" font-size="14" font-weight="400" fill="#737A74" text-anchor="middle">The application log is append-only; placement history is also used as the labelled ML training set.</text>
+</svg>

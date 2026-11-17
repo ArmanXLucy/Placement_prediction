@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1750" height="950" viewBox="0 0 1750 950" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1F4037"/></marker>
+<marker id="arrow-coral" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#E76F51"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#737A74"/></marker>
+<marker id="arrow-dark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#252B28"/></marker>
+<filter id="shadow" x="-8%" y="-8%" width="116%" height="120%"><feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#1F4037" flood-opacity="0.10"/></filter>
+</defs>
+<rect x="0" y="0" width="1750" height="950" rx="12" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="875.0" y="46" font-size="36" font-weight="700" fill="#1F4037" text-anchor="middle">Model Training and Evaluation Workflow</text>
+<text x="875.0" y="78" font-size="19" font-weight="400" fill="#737A74" text-anchor="middle">The actual training path implemented in backend/src/ml/logisticRegression.js</text>
+<line x1="70" y1="98" x2="1680" y2="98" stroke="#D8D8CF" stroke-width="1.5"/>
+<text x="1680" y="932" font-size="14" font-weight="400" fill="#737A74" text-anchor="end">Placement Prediction System  |  Project Report</text>
+<rect x="60" y="165" width="300" height="195" rx="12" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="210.0" y="196" font-size="20" font-weight="700" fill="#1F4037" text-anchor="middle">1. Training data</text>
+<line x1="74" y1="210" x2="346" y2="210" stroke="#1F4037" stroke-width="1"/>
+<text x="78" y="237" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">placement_history</text>
+<text x="78" y="260" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">401 labelled rows</text>
+<text x="78" y="283" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">6 numeric features</text>
+<text x="78" y="306" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">is_placed ∈ {0,1}</text>
+<rect x="400" y="165" width="300" height="195" rx="12" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="550.0" y="196" font-size="20" font-weight="700" fill="#1F4037" text-anchor="middle">2. Clean & split</text>
+<line x1="414" y1="210" x2="686" y2="210" stroke="#1F4037" stroke-width="1"/>
+<text x="418" y="237" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">drop rows with null label</text>
+<text x="418" y="260" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">deterministic shuffle</text>
+<text x="418" y="283" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">80% train / 20% test</text>
+<rect x="740" y="165" width="300" height="195" rx="12" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="890.0" y="196" font-size="20" font-weight="700" fill="#1F4037" text-anchor="middle">3. Standardise</text>
+<line x1="754" y1="210" x2="1026" y2="210" stroke="#1F4037" stroke-width="1"/>
+<text x="758" y="237" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">compute μ and σ on train</text>
+<text x="758" y="260" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">z = (x − μ) / σ</text>
+<text x="758" y="283" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">same transform for test</text>
+<rect x="1080" y="165" width="300" height="195" rx="12" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1230.0" y="196" font-size="20" font-weight="700" fill="#1F4037" text-anchor="middle">4. Optimise</text>
+<line x1="1094" y1="210" x2="1366" y2="210" stroke="#1F4037" stroke-width="1"/>
+<text x="1098" y="237" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">full-batch gradient descent</text>
+<text x="1098" y="260" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">4000 epochs · lr = 0.35</text>
+<text x="1098" y="283" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">L2 penalty = 0.001</text>
+<text x="1098" y="306" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">bias + 6 weights</text>
+<rect x="1420" y="165" width="270" height="195" rx="12" fill="#FFFFFF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1555.0" y="196" font-size="20" font-weight="700" fill="#1F4037" text-anchor="middle">5. Evaluate</text>
+<line x1="1434" y1="210" x2="1676" y2="210" stroke="#1F4037" stroke-width="1"/>
+<text x="1438" y="237" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">accuracy</text>
+<text x="1438" y="260" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">precision / recall / F1</text>
+<text x="1438" y="283" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">AUC + confusion</text>
+<text x="1438" y="306" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">train and test</text>
+<line x1="360" y1="262" x2="400" y2="262" stroke="#1F4037" stroke-width="2.7" marker-end="url(#arrow-green)"/>
+<line x1="700" y1="262" x2="740" y2="262" stroke="#1F4037" stroke-width="2.7" marker-end="url(#arrow-green)"/>
+<line x1="1040" y1="262" x2="1080" y2="262" stroke="#1F4037" stroke-width="2.7" marker-end="url(#arrow-green)"/>
+<line x1="1380" y1="262" x2="1420" y2="262" stroke="#1F4037" stroke-width="2.7" marker-end="url(#arrow-green)"/>
+<rect x="300" y="445" width="780" height="300" rx="18" fill="#EEF3EF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="690" y="482" font-size="21" font-weight="700" fill="#1F4037" text-anchor="middle">Held-out test performance (actual model.json)</text>
+<rect x="325" y="505" width="132" height="92" rx="10" fill="#FFFFFF" stroke="#D8D8CF" stroke-width="1.5"/>
+<text x="391" y="538" font-size="14" font-weight="500" fill="#737A74" text-anchor="middle">Accuracy</text>
+<text x="391" y="572" font-size="22" font-weight="700" fill="#1F4037" text-anchor="middle">95.06%</text>
+<rect x="473" y="505" width="132" height="92" rx="10" fill="#FFFFFF" stroke="#D8D8CF" stroke-width="1.5"/>
+<text x="539" y="538" font-size="14" font-weight="500" fill="#737A74" text-anchor="middle">Precision</text>
+<text x="539" y="572" font-size="22" font-weight="700" fill="#1F4037" text-anchor="middle">97.37%</text>
+<rect x="621" y="505" width="132" height="92" rx="10" fill="#FFFFFF" stroke="#D8D8CF" stroke-width="1.5"/>
+<text x="687" y="538" font-size="14" font-weight="500" fill="#737A74" text-anchor="middle">Recall</text>
+<text x="687" y="572" font-size="22" font-weight="700" fill="#1F4037" text-anchor="middle">92.50%</text>
+<rect x="769" y="505" width="132" height="92" rx="10" fill="#FFFFFF" stroke="#D8D8CF" stroke-width="1.5"/>
+<text x="835" y="538" font-size="14" font-weight="500" fill="#737A74" text-anchor="middle">F1</text>
+<text x="835" y="572" font-size="22" font-weight="700" fill="#1F4037" text-anchor="middle">94.87%</text>
+<rect x="917" y="505" width="132" height="92" rx="10" fill="#FFFFFF" stroke="#D8D8CF" stroke-width="1.5"/>
+<text x="983" y="538" font-size="14" font-weight="500" fill="#737A74" text-anchor="middle">ROC-AUC</text>
+<text x="983" y="572" font-size="22" font-weight="700" fill="#1F4037" text-anchor="middle">99.27%</text>
+<text x="690" y="640" font-size="16" font-weight="500" fill="#252B28" text-anchor="middle">Confusion matrix (81 test rows): TP 37 · TN 40 · FP 1 · FN 3</text>
+<text x="690" y="675" font-size="13" font-weight="400" fill="#737A74" text-anchor="middle">Metrics are measured on seeded synthetic history; they are not a deployment guarantee.</text>
+<path d="M 1560 360 L 1560 415 L 690 415 L 690 443" fill="none" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="1120" y="403" font-size="13" font-weight="600" fill="#1F4037" text-anchor="start">evaluate</text>
+<rect x="1210" y="465" width="420" height="200" rx="14" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1420" y="498" font-size="19" font-weight="700" fill="#1F4037" text-anchor="middle">6. Persist artefact</text>
+<text x="1232" y="530" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">src/ml/model.json</text>
+<text x="1232" y="554" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">features, means, stds</text>
+<text x="1232" y="578" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">weights, bias, metrics</text>
+<text x="1232" y="602" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">trained_at timestamp</text>
+<line x1="1082" y1="580" x2="1208" y2="580" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="1145" y="567" font-size="13" font-weight="600" fill="#1F4037" text-anchor="middle">save</text>
+<rect x="60" y="465" width="210" height="190" rx="14" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="165" y="498" font-size="18" font-weight="700" fill="#1F4037" text-anchor="middle">Reproducibility</text>
+<text x="82" y="530" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">seeded shuffle</text>
+<text x="82" y="555" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">fixed split</text>
+<text x="82" y="580" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">versioned model</text>
+<text x="82" y="605" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">npm run train</text>
+<text x="875" y="870" font-size="14" font-weight="400" fill="#737A74" text-anchor="middle">The prediction endpoint calls ensureModel(): it loads model.json, or retrains from placement_history if the artefact is missing.</text>
+</svg>

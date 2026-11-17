@@ -168,8 +168,10 @@ database and run `npm run seed` locally. If your provider requires TLS, add `DB_
 ### 2. Import the repo into Vercel
 1. Push this repository to GitHub/GitLab/Bitbucket.
 2. In Vercel choose **Add New → Project → Import** the repository.
-3. Keep the **Root Directory** as the repository root. Do **not** change the
-   framework preset — `vercel.json` sets the build command, output directory and routing.
+3. Keep the **Root Directory** as the repository root. It must be empty (or `.`),
+   **not** `backend` or `frontend`. If the import screen shows `backend`, clear it.
+   Do **not** change the framework preset — `vercel.json` sets the build command,
+   output directory and routing.
 4. Add the environment variables below for Production (and Preview if wanted):
 
 | Variable | Value |
@@ -199,6 +201,17 @@ vercel --prod     # production deployment
 > Note: the serverless function keeps a small MySQL pool (3 connections by default;
 > override with `DB_POOL_SIZE`). Use a provider that allows connections from Vercel's
 > dynamic IPs, or enable its "allow public access" option.
+
+### Troubleshooting
+
+- **`Missing script: "build"` with `workspace placement-backend` or
+  `/vercel/path0/backend`** — the project's **Root Directory** is set to `backend`.
+  Go to **Project → Settings → General → Root Directory**, clear it (repo root),
+  save, and redeploy.
+- **`/api/health` returns 503** — the function cannot reach MySQL. Check the DB
+  environment variables and that `DB_SSL=true` is set for TLS-only providers.
+- **`database "disconnected"` with an empty message** — usually a missing/wrong
+  `DB_HOST`/`DB_PASSWORD` or the database's IP allowlist blocking Vercel.
 
 ---
 

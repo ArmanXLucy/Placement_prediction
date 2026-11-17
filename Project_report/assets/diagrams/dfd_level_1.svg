@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1750" height="1150" viewBox="0 0 1750 1150" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1F4037"/></marker>
+<marker id="arrow-coral" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#E76F51"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#737A74"/></marker>
+<marker id="arrow-dark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#252B28"/></marker>
+<filter id="shadow" x="-8%" y="-8%" width="116%" height="120%"><feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#1F4037" flood-opacity="0.10"/></filter>
+</defs>
+<rect x="0" y="0" width="1750" height="1150" rx="12" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="875.0" y="46" font-size="36" font-weight="700" fill="#1F4037" text-anchor="middle">DFD Level 1</text>
+<text x="875.0" y="78" font-size="19" font-weight="400" fill="#737A74" text-anchor="middle">Seven processes with their primary data stores; each process lists additional read access</text>
+<line x1="70" y1="98" x2="1680" y2="98" stroke="#D8D8CF" stroke-width="1.5"/>
+<text x="1680" y="1132" font-size="14" font-weight="400" fill="#737A74" text-anchor="end">Placement Prediction System  |  Project Report</text>
+<circle cx="95" cy="290" r="16" fill="#FFFFFF" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="95" y1="306" x2="95" y2="352" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="70" y1="322" x2="120" y2="322" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="95" y1="352" x2="72" y2="386" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="95" y1="352" x2="118" y2="386" stroke="#1F4037" stroke-width="2.5"/>
+<text x="95" y="412" font-size="19" font-weight="700" fill="#1F4037" text-anchor="middle">Student</text>
+<circle cx="95" cy="850" r="16" fill="#FFFFFF" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="95" y1="866" x2="95" y2="912" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="70" y1="882" x2="120" y2="882" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="95" y1="912" x2="72" y2="946" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="95" y1="912" x2="118" y2="946" stroke="#1F4037" stroke-width="2.5"/>
+<text x="95" y="972" font-size="19" font-weight="700" fill="#1F4037" text-anchor="middle">Administrator</text>
+<rect x="255" y="145" width="540" height="96" rx="12" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="275" y="176" font-size="20" font-weight="700" fill="#1F4037" text-anchor="start">1.0  Authentication</text>
+<text x="275" y="203" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">Verify credentials, issue JWT and role</text>
+<text x="275" y="225" font-size="13" font-weight="600" fill="#E76F51" text-anchor="start">Reads/writes D1</text>
+<rect x="1120" y="145" width="470" height="96" rx="10" fill="#EDF2F6" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1142" y="175" font-size="22" font-weight="700" fill="#1F4037" text-anchor="start">D1</text>
+<text x="1185" y="175" font-size="18" font-weight="700" fill="#1F4037" text-anchor="start">Users</text>
+<text x="1185" y="203" font-size="14" font-weight="400" fill="#737A74" text-anchor="start">email, password hash, role</text>
+<line x1="795" y1="193" x2="1118" y2="193" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="956" y="181" font-size="13" font-weight="600" fill="#1F4037" text-anchor="middle">read / write</text>
+<rect x="255" y="270" width="540" height="96" rx="12" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="275" y="301" font-size="20" font-weight="700" fill="#1F4037" text-anchor="start">2.0  Profile & skills</text>
+<text x="275" y="328" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">Maintain student profile and skill proficiency</text>
+<text x="275" y="350" font-size="13" font-weight="600" fill="#E76F51" text-anchor="start">Reads/writes D2</text>
+<rect x="1120" y="270" width="470" height="96" rx="10" fill="#EDF2F6" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1142" y="300" font-size="22" font-weight="700" fill="#1F4037" text-anchor="start">D2</text>
+<text x="1185" y="300" font-size="18" font-weight="700" fill="#1F4037" text-anchor="start">Students & skills</text>
+<text x="1185" y="328" font-size="14" font-weight="400" fill="#737A74" text-anchor="start">CGPA, backlogs, skills</text>
+<line x1="795" y1="318" x2="1118" y2="318" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="956" y="306" font-size="13" font-weight="600" fill="#1F4037" text-anchor="middle">read / write</text>
+<rect x="255" y="395" width="540" height="96" rx="12" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="275" y="426" font-size="20" font-weight="700" fill="#1F4037" text-anchor="start">3.0  Job catalogue</text>
+<text x="275" y="453" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">Maintain companies, jobs and skill requirements</text>
+<text x="275" y="475" font-size="13" font-weight="600" fill="#E76F51" text-anchor="start">Reads/writes D3</text>
+<rect x="1120" y="395" width="470" height="96" rx="10" fill="#EDF2F6" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1142" y="425" font-size="22" font-weight="700" fill="#1F4037" text-anchor="start">D3</text>
+<text x="1185" y="425" font-size="18" font-weight="700" fill="#1F4037" text-anchor="start">Jobs & companies</text>
+<text x="1185" y="453" font-size="14" font-weight="400" fill="#737A74" text-anchor="start">package, cut-off, deadline</text>
+<line x1="795" y1="443" x2="1118" y2="443" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="956" y="431" font-size="13" font-weight="600" fill="#1F4037" text-anchor="middle">read / write</text>
+<rect x="255" y="520" width="540" height="96" rx="12" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="275" y="551" font-size="20" font-weight="700" fill="#1F4037" text-anchor="start">4.0  Matching & recommendations</text>
+<text x="275" y="578" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">Apply eligibility and skill-overlap rules</text>
+<text x="275" y="600" font-size="13" font-weight="600" fill="#E76F51" text-anchor="start">Reads D2, D3 · writes D6</text>
+<rect x="1120" y="520" width="470" height="96" rx="10" fill="#EDF2F6" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1142" y="550" font-size="22" font-weight="700" fill="#1F4037" text-anchor="start">D6</text>
+<text x="1185" y="550" font-size="18" font-weight="700" fill="#1F4037" text-anchor="start">Recommendations</text>
+<text x="1185" y="578" font-size="14" font-weight="400" fill="#737A74" text-anchor="start">match %, matched/missing skills</text>
+<line x1="795" y1="568" x2="1118" y2="568" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="956" y="556" font-size="13" font-weight="600" fill="#1F4037" text-anchor="middle">read / write</text>
+<rect x="255" y="645" width="540" height="96" rx="12" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="275" y="676" font-size="20" font-weight="700" fill="#1F4037" text-anchor="start">5.0  Placement prediction</text>
+<text x="275" y="703" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">Build the six-feature vector and run the model</text>
+<text x="275" y="725" font-size="13" font-weight="600" fill="#E76F51" text-anchor="start">Reads D2, D5 · writes D5</text>
+<rect x="1120" y="645" width="470" height="96" rx="10" fill="#EDF2F6" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1142" y="675" font-size="22" font-weight="700" fill="#1F4037" text-anchor="start">D5</text>
+<text x="1185" y="675" font-size="18" font-weight="700" fill="#1F4037" text-anchor="start">History & predictions</text>
+<text x="1185" y="703" font-size="14" font-weight="400" fill="#737A74" text-anchor="start">training rows, probabilities</text>
+<line x1="795" y1="693" x2="1118" y2="693" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="956" y="681" font-size="13" font-weight="600" fill="#1F4037" text-anchor="middle">read / write</text>
+<rect x="255" y="770" width="540" height="96" rx="12" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="275" y="801" font-size="20" font-weight="700" fill="#1F4037" text-anchor="start">6.0  Application tracking</text>
+<text x="275" y="828" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">Apply, review and change application status</text>
+<text x="275" y="850" font-size="13" font-weight="600" fill="#E76F51" text-anchor="start">Reads/writes D4 · updates D2, D5</text>
+<rect x="1120" y="770" width="470" height="96" rx="10" fill="#EDF2F6" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1142" y="800" font-size="22" font-weight="700" fill="#1F4037" text-anchor="start">D4</text>
+<text x="1185" y="800" font-size="18" font-weight="700" fill="#1F4037" text-anchor="start">Applications</text>
+<text x="1185" y="828" font-size="14" font-weight="400" fill="#737A74" text-anchor="start">status, applied_at, audit log</text>
+<line x1="795" y1="818" x2="1118" y2="818" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="956" y="806" font-size="13" font-weight="600" fill="#1F4037" text-anchor="middle">read / write</text>
+<rect x="255" y="895" width="540" height="96" rx="12" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="275" y="926" font-size="20" font-weight="700" fill="#1F4037" text-anchor="start">7.0  Analytics & reporting</text>
+<text x="275" y="953" font-size="15" font-weight="400" fill="#252B28" text-anchor="start">Aggregate placement, skill and trend data</text>
+<text x="275" y="975" font-size="13" font-weight="600" fill="#E76F51" text-anchor="start">Reads D3, D4, D5</text>
+<line x1="150" y1="310" x2="190" y2="310" stroke="#1F4037" stroke-width="2"/>
+<path d="M 190 310 L 220 310 L 220 190 L 253 190" fill="none" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="196" y="205" font-size="12" font-weight="600" fill="#1F4037" text-anchor="start">login</text>
+<path d="M 190 310 L 220 310 L 220 315 L 253 315" fill="none" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="196" y="300" font-size="12" font-weight="600" fill="#1F4037" text-anchor="start">profile</text>
+<path d="M 190 310 L 220 310 L 220 440 L 253 440" fill="none" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="196" y="355" font-size="12" font-weight="600" fill="#1F4037" text-anchor="start">view jobs</text>
+<path d="M 190 310 L 220 310 L 220 810 L 253 810" fill="none" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="196" y="525" font-size="12" font-weight="600" fill="#1F4037" text-anchor="start">apply / track</text>
+<path d="M 150 870 L 220 870 L 220 440 L 253 440" fill="none" stroke="#E76F51" stroke-width="2.2" marker-end="url(#arrow-coral)"/>
+<text x="196" y="610" font-size="12" font-weight="600" fill="#E76F51" text-anchor="start">manage</text>
+<path d="M 150 870 L 220 870 L 220 810 L 253 810" fill="none" stroke="#E76F51" stroke-width="2.2" marker-end="url(#arrow-coral)"/>
+<text x="196" y="860" font-size="12" font-weight="600" fill="#E76F51" text-anchor="start">review</text>
+<path d="M 150 870 L 220 870 L 220 940 L 253 940" fill="none" stroke="#E76F51" stroke-width="2.2" marker-end="url(#arrow-coral)"/>
+<text x="196" y="985" font-size="12" font-weight="600" fill="#E76F51" text-anchor="start">analytics</text>
+<rect x="1120" y="895" width="470" height="72" rx="10" fill="#FFFFFF" stroke="#E76F51" stroke-width="1.5" stroke-dasharray="6 5"/>
+<text x="1142" y="923" font-size="18" font-weight="700" fill="#E76F51" text-anchor="start">D3 · D4 · D5</text>
+<text x="1142" y="948" font-size="14" font-weight="400" fill="#737A74" text-anchor="start">read-only analytics sources</text>
+<line x1="795" y1="940" x2="1118" y2="930" stroke="#E76F51" stroke-width="2.2" stroke-dasharray="6 5" marker-end="url(#arrow-coral)"/>
+<text x="950" y="920" font-size="13" font-weight="600" fill="#E76F51" text-anchor="middle">read</text>
+<text x="850" y="1090" font-size="14" font-weight="400" fill="#737A74" text-anchor="middle">The diagram shows primary persistence flows; cross-store reads are listed inside each process. Process 6 is the only process whose trigger can set is_placed.</text>
+</svg>

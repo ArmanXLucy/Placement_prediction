@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1F4037"/></marker>
+<marker id="arrow-coral" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#E76F51"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#737A74"/></marker>
+<marker id="arrow-dark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#252B28"/></marker>
+<filter id="shadow" x="-8%" y="-8%" width="116%" height="120%"><feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#1F4037" flood-opacity="0.10"/></filter>
+</defs>
+<rect x="0" y="0" width="1500" height="950" rx="12" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="750.0" y="46" font-size="36" font-weight="700" fill="#1F4037" text-anchor="middle">Use Case Diagram</text>
+<text x="750.0" y="78" font-size="19" font-weight="400" fill="#737A74" text-anchor="middle">Goals available to students and the placement administrator</text>
+<line x1="70" y1="98" x2="1430" y2="98" stroke="#D8D8CF" stroke-width="1.5"/>
+<text x="1430" y="932" font-size="14" font-weight="400" fill="#737A74" text-anchor="end">Placement Prediction System  |  Project Report</text>
+<rect x="330" y="120" width="840" height="720" rx="18" fill="#FCFCF9" stroke="#1F4037" stroke-width="1.5" stroke-dasharray="7 6"/>
+<text x="750" y="155" font-size="24" font-weight="700" fill="#1F4037" text-anchor="middle">Placement Prediction System</text>
+<text x="750" y="180" font-size="14" font-weight="400" fill="#737A74" text-anchor="middle">system boundary</text>
+<circle cx="150" cy="330" r="16" fill="#FFFFFF" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="150" y1="346" x2="150" y2="392" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="125" y1="362" x2="175" y2="362" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="150" y1="392" x2="127" y2="426" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="150" y1="392" x2="173" y2="426" stroke="#1F4037" stroke-width="2.5"/>
+<text x="150" y="452" font-size="19" font-weight="700" fill="#1F4037" text-anchor="middle">Student</text>
+<circle cx="1350" cy="330" r="16" fill="#FFFFFF" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="1350" y1="346" x2="1350" y2="392" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="1325" y1="362" x2="1375" y2="362" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="1350" y1="392" x2="1327" y2="426" stroke="#1F4037" stroke-width="2.5"/>
+<line x1="1350" y1="392" x2="1373" y2="426" stroke="#1F4037" stroke-width="2.5"/>
+<text x="1350" y="452" font-size="19" font-weight="700" fill="#1F4037" text-anchor="middle">Administrator</text>
+<ellipse cx="565" cy="230" rx="185" ry="31" fill="#FFFFFF" stroke="#1F4037" stroke-width="2.2"/>
+<text x="565" y="235.6" font-size="16" font-weight="600" fill="#252B28" text-anchor="middle">Register / log in</text>
+<ellipse cx="565" cy="315" rx="185" ry="31" fill="#FFFFFF" stroke="#1F4037" stroke-width="2.2"/>
+<text x="565" y="320.6" font-size="16" font-weight="600" fill="#252B28" text-anchor="middle">Manage profile and skills</text>
+<ellipse cx="565" cy="400" rx="185" ry="31" fill="#FFFFFF" stroke="#1F4037" stroke-width="2.2"/>
+<text x="565" y="405.6" font-size="16" font-weight="600" fill="#252B28" text-anchor="middle">Browse and filter jobs</text>
+<ellipse cx="565" cy="485" rx="185" ry="31" fill="#FFFFFF" stroke="#1F4037" stroke-width="2.2"/>
+<text x="565" y="490.6" font-size="16" font-weight="600" fill="#252B28" text-anchor="middle">View matched recommendations</text>
+<ellipse cx="565" cy="570" rx="185" ry="31" fill="#FFFFFF" stroke="#1F4037" stroke-width="2.2"/>
+<text x="565" y="575.6" font-size="16" font-weight="600" fill="#252B28" text-anchor="middle">Run placement prediction</text>
+<ellipse cx="565" cy="655" rx="185" ry="31" fill="#FFFFFF" stroke="#1F4037" stroke-width="2.2"/>
+<text x="565" y="660.6" font-size="16" font-weight="600" fill="#252B28" text-anchor="middle">Apply and track applications</text>
+<ellipse cx="565" cy="740" rx="185" ry="31" fill="#FFFFFF" stroke="#1F4037" stroke-width="2.2"/>
+<text x="565" y="745.6" font-size="16" font-weight="600" fill="#252B28" text-anchor="middle">Withdraw pending application</text>
+<ellipse cx="980" cy="315" rx="170" ry="31" fill="#FBEDE8" stroke="#E76F51" stroke-width="2.2"/>
+<text x="980" y="320.25" font-size="15" font-weight="600" fill="#252B28" text-anchor="middle">Manage jobs and companies</text>
+<ellipse cx="980" cy="400" rx="170" ry="31" fill="#FBEDE8" stroke="#E76F51" stroke-width="2.2"/>
+<text x="980" y="405.25" font-size="15" font-weight="600" fill="#252B28" text-anchor="middle">Review applications</text>
+<ellipse cx="980" cy="485" rx="170" ry="31" fill="#FBEDE8" stroke="#E76F51" stroke-width="2.2"/>
+<text x="980" y="490.25" font-size="15" font-weight="600" fill="#252B28" text-anchor="middle">Update application status</text>
+<ellipse cx="980" cy="570" rx="170" ry="31" fill="#FBEDE8" stroke="#E76F51" stroke-width="2.2"/>
+<text x="980" y="575.25" font-size="15" font-weight="600" fill="#252B28" text-anchor="middle">View placement analytics</text>
+<ellipse cx="980" cy="655" rx="170" ry="31" fill="#FBEDE8" stroke="#E76F51" stroke-width="2.2"/>
+<text x="980" y="660.25" font-size="15" font-weight="600" fill="#252B28" text-anchor="middle">Inspect student records</text>
+<line x1="195" y1="362" x2="380" y2="230" stroke="#737A74" stroke-width="1.8"/>
+<line x1="195" y1="362" x2="380" y2="315" stroke="#737A74" stroke-width="1.8"/>
+<line x1="195" y1="362" x2="380" y2="400" stroke="#737A74" stroke-width="1.8"/>
+<line x1="195" y1="362" x2="380" y2="485" stroke="#737A74" stroke-width="1.8"/>
+<line x1="195" y1="362" x2="380" y2="570" stroke="#737A74" stroke-width="1.8"/>
+<line x1="195" y1="362" x2="380" y2="655" stroke="#737A74" stroke-width="1.8"/>
+<line x1="195" y1="362" x2="380" y2="740" stroke="#737A74" stroke-width="1.8"/>
+<line x1="1305" y1="362" x2="1150" y2="315" stroke="#E76F51" stroke-width="1.8"/>
+<line x1="1305" y1="362" x2="1150" y2="400" stroke="#E76F51" stroke-width="1.8"/>
+<line x1="1305" y1="362" x2="1150" y2="485" stroke="#E76F51" stroke-width="1.8"/>
+<line x1="1305" y1="362" x2="1150" y2="570" stroke="#E76F51" stroke-width="1.8"/>
+<line x1="1305" y1="362" x2="1150" y2="655" stroke="#E76F51" stroke-width="1.8"/>
+<line x1="565" y1="284" x2="565" y2="263" stroke="#737A74" stroke-width="2.2" stroke-dasharray="6 5" marker-end="url(#arrow-muted)"/>
+<text x="700" y="280" font-size="12" font-weight="600" fill="#737A74" text-anchor="middle"><<include>> login</text>
+<text x="750" y="875" font-size="14" font-weight="400" fill="#737A74" text-anchor="middle">All protected use cases require a valid JWT. Solid lines are actor associations; the dashed arrow is an include relationship.</text>
+</svg>

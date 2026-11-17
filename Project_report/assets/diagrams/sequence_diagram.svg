@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1150" viewBox="0 0 1800 1150" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1F4037"/></marker>
+<marker id="arrow-coral" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#E76F51"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#737A74"/></marker>
+<marker id="arrow-dark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#252B28"/></marker>
+<filter id="shadow" x="-8%" y="-8%" width="116%" height="120%"><feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#1F4037" flood-opacity="0.10"/></filter>
+</defs>
+<rect x="0" y="0" width="1800" height="1150" rx="12" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="900.0" y="46" font-size="36" font-weight="700" fill="#1F4037" text-anchor="middle">Sequence Diagram — Placement Prediction</text>
+<text x="900.0" y="78" font-size="19" font-weight="400" fill="#737A74" text-anchor="middle">Numbered request flow from the student's browser to the model and database</text>
+<line x1="70" y1="98" x2="1730" y2="98" stroke="#D8D8CF" stroke-width="1.5"/>
+<text x="1730" y="1132" font-size="14" font-weight="400" fill="#737A74" text-anchor="end">Placement Prediction System  |  Project Report</text>
+<rect x="25" y="120" width="190" height="50" rx="8" fill="#EEF3EF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="120" y="151" font-size="17" font-weight="700" fill="#1F4037" text-anchor="middle">Student</text>
+<line x1="120" y1="170" x2="120" y2="1030" stroke="#737A74" stroke-width="1.5" stroke-dasharray="7 6"/>
+<rect x="295" y="120" width="190" height="50" rx="8" fill="#EEF3EF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="390" y="151" font-size="17" font-weight="700" fill="#1F4037" text-anchor="middle">React UI</text>
+<line x1="390" y1="170" x2="390" y2="1030" stroke="#737A74" stroke-width="1.5" stroke-dasharray="7 6"/>
+<rect x="585" y="120" width="190" height="50" rx="8" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="680" y="151" font-size="17" font-weight="700" fill="#1F4037" text-anchor="middle">Express API</text>
+<line x1="680" y1="170" x2="680" y2="1030" stroke="#737A74" stroke-width="1.5" stroke-dasharray="7 6"/>
+<rect x="855" y="120" width="190" height="50" rx="8" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="950" y="151" font-size="17" font-weight="700" fill="#1F4037" text-anchor="middle">Auth middleware</text>
+<line x1="950" y1="170" x2="950" y2="1030" stroke="#737A74" stroke-width="1.5" stroke-dasharray="7 6"/>
+<rect x="1120" y="120" width="190" height="50" rx="8" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1215" y="151" font-size="17" font-weight="700" fill="#1F4037" text-anchor="middle">Prediction controller</text>
+<line x1="1215" y1="170" x2="1215" y2="1030" stroke="#737A74" stroke-width="1.5" stroke-dasharray="7 6"/>
+<rect x="1375" y="120" width="190" height="50" rx="8" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1470" y="151" font-size="17" font-weight="700" fill="#1F4037" text-anchor="middle">Logistic model</text>
+<line x1="1470" y1="170" x2="1470" y2="1030" stroke="#737A74" stroke-width="1.5" stroke-dasharray="7 6"/>
+<rect x="1585" y="120" width="190" height="50" rx="8" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1680" y="151" font-size="17" font-weight="700" fill="#1F4037" text-anchor="middle">MySQL</text>
+<line x1="1680" y1="170" x2="1680" y2="1030" stroke="#737A74" stroke-width="1.5" stroke-dasharray="7 6"/>
+<rect x="642" y="190" width="76" height="800" rx="5" fill="#EDF2F6" stroke="#1F4037" stroke-width="1.5"/>
+<rect x="912" y="190" width="76" height="800" rx="5" fill="#EDF2F6" stroke="#1F4037" stroke-width="1.5"/>
+<rect x="1177" y="190" width="76" height="800" rx="5" fill="#EDF2F6" stroke="#1F4037" stroke-width="1.5"/>
+<rect x="1435" y="190" width="70" height="300" rx="5" fill="#EDF2F6" stroke="#1F4037" stroke-width="1.5"/>
+<rect x="1642" y="190" width="76" height="300" rx="5" fill="#EDF2F6" stroke="#1F4037" stroke-width="1.5"/>
+<line x1="120" y1="220" x2="390" y2="220" stroke="#737A74" stroke-width="2.0" marker-end="url(#arrow-muted)"/>
+<text x="255.0" y="213" font-size="14" font-weight="600" fill="#737A74" text-anchor="middle">1  Open prediction page</text>
+<line x1="390" y1="255" x2="680" y2="255" stroke="#1F4037" stroke-width="2.0" marker-end="url(#arrow-green)"/>
+<text x="535.0" y="248" font-size="14" font-weight="600" fill="#1F4037" text-anchor="middle">2  GET /api/predictions/me + JWT</text>
+<line x1="680" y1="290" x2="950" y2="290" stroke="#1F4037" stroke-width="2.0" marker-end="url(#arrow-green)"/>
+<text x="815.0" y="283" font-size="14" font-weight="600" fill="#1F4037" text-anchor="middle">3  verify token</text>
+<line x1="950" y1="325" x2="680" y2="325" stroke="#737A74" stroke-width="2.0" stroke-dasharray="6 5" marker-end="url(#arrow-muted)"/>
+<text x="815.0" y="318" font-size="14" font-weight="600" fill="#737A74" text-anchor="middle">4  user + studentId</text>
+<line x1="680" y1="360" x2="1215" y2="360" stroke="#1F4037" stroke-width="2.0" marker-end="url(#arrow-green)"/>
+<text x="947.5" y="353" font-size="14" font-weight="600" fill="#1F4037" text-anchor="middle">5  delegate request</text>
+<line x1="1215" y1="395" x2="1680" y2="395" stroke="#1F4037" stroke-width="2.0" marker-end="url(#arrow-green)"/>
+<text x="1447.5" y="388" font-size="14" font-weight="600" fill="#1F4037" text-anchor="middle">6  SELECT latest prediction</text>
+<line x1="1680" y1="430" x2="1215" y2="430" stroke="#737A74" stroke-width="2.0" stroke-dasharray="6 5" marker-end="url(#arrow-muted)"/>
+<text x="1447.5" y="423" font-size="14" font-weight="600" fill="#737A74" text-anchor="middle">7  latest + history</text>
+<line x1="1215" y1="465" x2="390" y2="465" stroke="#E76F51" stroke-width="2.0" marker-end="url(#arrow-coral)"/>
+<text x="802.5" y="458" font-size="14" font-weight="600" fill="#E76F51" text-anchor="middle">8  200 JSON</text>
+<line x1="390" y1="500" x2="120" y2="500" stroke="#737A74" stroke-width="2.0" marker-end="url(#arrow-muted)"/>
+<text x="255.0" y="493" font-size="14" font-weight="600" fill="#737A74" text-anchor="middle">9  render saved result</text>
+<line x1="120" y1="535" x2="390" y2="535" stroke="#737A74" stroke-width="2.0" marker-end="url(#arrow-muted)"/>
+<text x="255.0" y="528" font-size="14" font-weight="600" fill="#737A74" text-anchor="middle">10  Click Run prediction</text>
+<line x1="390" y1="570" x2="680" y2="570" stroke="#1F4037" stroke-width="2.0" marker-end="url(#arrow-green)"/>
+<text x="535.0" y="563" font-size="14" font-weight="600" fill="#1F4037" text-anchor="middle">11  POST /api/predictions/me</text>
+<line x1="680" y1="605" x2="950" y2="605" stroke="#1F4037" stroke-width="2.0" marker-end="url(#arrow-green)"/>
+<text x="815.0" y="598" font-size="14" font-weight="600" fill="#1F4037" text-anchor="middle">12  authorise</text>
+<line x1="950" y1="640" x2="680" y2="640" stroke="#737A74" stroke-width="2.0" stroke-dasharray="6 5" marker-end="url(#arrow-muted)"/>
+<text x="815.0" y="633" font-size="14" font-weight="600" fill="#737A74" text-anchor="middle">13  studentId</text>
+<line x1="680" y1="675" x2="1215" y2="675" stroke="#1F4037" stroke-width="2.0" marker-end="url(#arrow-green)"/>
+<text x="947.5" y="668" font-size="14" font-weight="600" fill="#1F4037" text-anchor="middle">14  predict(studentId)</text>
+<line x1="1215" y1="710" x2="1680" y2="710" stroke="#1F4037" stroke-width="2.0" marker-end="url(#arrow-green)"/>
+<text x="1447.5" y="703" font-size="14" font-weight="600" fill="#1F4037" text-anchor="middle">15  SELECT profile + skills</text>
+<line x1="1680" y1="745" x2="1215" y2="745" stroke="#737A74" stroke-width="2.0" stroke-dasharray="6 5" marker-end="url(#arrow-muted)"/>
+<text x="1447.5" y="738" font-size="14" font-weight="600" fill="#737A74" text-anchor="middle">16  feature values</text>
+<line x1="1215" y1="780" x2="1470" y2="780" stroke="#1F4037" stroke-width="2.0" marker-end="url(#arrow-green)"/>
+<text x="1342.5" y="773" font-size="14" font-weight="600" fill="#1F4037" text-anchor="middle">17  predictProbability(vector)</text>
+<line x1="1470" y1="815" x2="1215" y2="815" stroke="#737A74" stroke-width="2.0" stroke-dasharray="6 5" marker-end="url(#arrow-muted)"/>
+<text x="1342.5" y="808" font-size="14" font-weight="600" fill="#737A74" text-anchor="middle">18  p + contributions</text>
+<line x1="1215" y1="850" x2="1680" y2="850" stroke="#1F4037" stroke-width="2.0" marker-end="url(#arrow-green)"/>
+<text x="1447.5" y="843" font-size="14" font-weight="600" fill="#1F4037" text-anchor="middle">19  INSERT prediction</text>
+<line x1="1680" y1="885" x2="1215" y2="885" stroke="#737A74" stroke-width="2.0" stroke-dasharray="6 5" marker-end="url(#arrow-muted)"/>
+<text x="1447.5" y="878" font-size="14" font-weight="600" fill="#737A74" text-anchor="middle">20  insert id</text>
+<line x1="1215" y1="920" x2="390" y2="920" stroke="#E76F51" stroke-width="2.0" marker-end="url(#arrow-coral)"/>
+<text x="802.5" y="913" font-size="14" font-weight="600" fill="#E76F51" text-anchor="middle">21  200 JSON (probability + advice)</text>
+<line x1="390" y1="955" x2="120" y2="955" stroke="#737A74" stroke-width="2.0" marker-end="url(#arrow-muted)"/>
+<text x="255.0" y="948" font-size="14" font-weight="600" fill="#737A74" text-anchor="middle">22  gauge, factors, advice</text>
+<text x="900" y="1085" font-size="14" font-weight="400" fill="#737A74" text-anchor="middle">All protected routes pass through the JWT middleware; only the prediction controller calls the model, and every run is persisted.</text>
+</svg>

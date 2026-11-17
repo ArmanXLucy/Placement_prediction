@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1550" height="850" viewBox="0 0 1550 850" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1F4037"/></marker>
+<marker id="arrow-coral" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#E76F51"/></marker>
+<marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#737A74"/></marker>
+<marker id="arrow-dark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#252B28"/></marker>
+<filter id="shadow" x="-8%" y="-8%" width="116%" height="120%"><feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#1F4037" flood-opacity="0.10"/></filter>
+</defs>
+<rect x="0" y="0" width="1550" height="850" rx="12" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="775.0" y="46" font-size="36" font-weight="700" fill="#1F4037" text-anchor="middle">State-Chart Diagram — Application Lifecycle</text>
+<text x="775.0" y="78" font-size="19" font-weight="400" fill="#737A74" text-anchor="middle">States, guard conditions and transitions of an application record</text>
+<line x1="70" y1="98" x2="1480" y2="98" stroke="#D8D8CF" stroke-width="1.5"/>
+<text x="1480" y="832" font-size="14" font-weight="400" fill="#737A74" text-anchor="end">Placement Prediction System  |  Project Report</text>
+<rect x="135" y="200" width="250" height="100" rx="20" fill="#F4F2EA" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="260" y="242" font-size="22" font-weight="700" fill="#1F4037" text-anchor="middle">Applied</text>
+<text x="260" y="272" font-size="14" font-weight="400" fill="#737A74" text-anchor="middle">initial state</text>
+<rect x="485" y="200" width="250" height="100" rx="20" fill="#EEF3EF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="610" y="242" font-size="22" font-weight="700" fill="#1F4037" text-anchor="middle">Shortlisted</text>
+<text x="610" y="272" font-size="14" font-weight="400" fill="#737A74" text-anchor="middle">screening passed</text>
+<rect x="835" y="200" width="250" height="100" rx="20" fill="#EEF3EF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="960" y="242" font-size="22" font-weight="700" fill="#1F4037" text-anchor="middle">Interviewed</text>
+<text x="960" y="272" font-size="14" font-weight="400" fill="#737A74" text-anchor="middle">interview completed</text>
+<rect x="1185" y="200" width="250" height="100" rx="20" fill="#EEF3EF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1310" y="242" font-size="22" font-weight="700" fill="#1F4037" text-anchor="middle">Selected</text>
+<text x="1310" y="272" font-size="14" font-weight="400" fill="#737A74" text-anchor="middle">offer accepted</text>
+<rect x="835" y="490" width="250" height="100" rx="20" fill="#FBEDE8" stroke="#E76F51" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="960" y="532" font-size="22" font-weight="700" fill="#E76F51" text-anchor="middle">Rejected</text>
+<text x="960" y="562" font-size="14" font-weight="400" fill="#737A74" text-anchor="middle">screening / interview fail</text>
+<rect x="135" y="490" width="250" height="100" rx="20" fill="#FBEDE8" stroke="#E76F51" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="260" y="532" font-size="22" font-weight="700" fill="#E76F51" text-anchor="middle">Withdrawn</text>
+<text x="260" y="562" font-size="14" font-weight="400" fill="#737A74" text-anchor="middle">student action</text>
+<circle cx="75" cy="250" r="16" fill="#1F4037"/>
+<text x="75" y="215" font-size="15" font-weight="600" fill="#1F4037" text-anchor="middle">Start</text>
+<line x1="93" y1="250" x2="133" y2="250" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="113" y="238" font-size="12" font-weight="600" fill="#1F4037" text-anchor="middle">create</text>
+<line x1="385" y1="250" x2="483" y2="250" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="434.0" y="236" font-size="13" font-weight="600" fill="#1F4037" text-anchor="middle">shortlist</text>
+<line x1="735" y1="250" x2="833" y2="250" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="784.0" y="236" font-size="13" font-weight="600" fill="#1F4037" text-anchor="middle">interview</text>
+<line x1="1085" y1="250" x2="1183" y2="250" stroke="#1F4037" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+<text x="1134.0" y="236" font-size="13" font-weight="600" fill="#1F4037" text-anchor="middle">select</text>
+<path d="M 385 270 L 430 270 L 430 400 L 1060 400 L 1060 488" fill="none" stroke="#E76F51" stroke-width="2.2" marker-end="url(#arrow-coral)"/>
+<text x="745" y="390" font-size="13" font-weight="600" fill="#E76F51" text-anchor="start">reject</text>
+<path d="M 735 300 L 735 380 L 1000 380 L 1000 488" fill="none" stroke="#E76F51" stroke-width="2.2" marker-end="url(#arrow-coral)"/>
+<text x="870" y="370" font-size="13" font-weight="600" fill="#E76F51" text-anchor="start">reject</text>
+<line x1="960" y1="300" x2="960" y2="488" stroke="#E76F51" stroke-width="2.2" marker-end="url(#arrow-coral)"/>
+<text x="995" y="400" font-size="13" font-weight="600" fill="#E76F51" text-anchor="middle">reject</text>
+<line x1="260" y1="300" x2="260" y2="488" stroke="#E76F51" stroke-width="2.2" marker-end="url(#arrow-coral)"/>
+<text x="300" y="400" font-size="13" font-weight="600" fill="#E76F51" text-anchor="middle">withdraw</text>
+<rect x="1160" y="500" width="320" height="175" rx="14" fill="#EEF3EF" stroke="#1F4037" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1320" y="532" font-size="17" font-weight="700" fill="#1F4037" text-anchor="middle">On transition to Selected</text>
+<text x="1182" y="560" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">students.is_placed = 1</text>
+<text x="1182" y="584" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">INSERT placement_history</text>
+<text x="1182" y="608" font-size="14" font-weight="400" fill="#252B28" text-anchor="start">application_log audit row</text>
+<text x="775" y="760" font-size="14" font-weight="400" fill="#737A74" text-anchor="middle">Withdrawn and rejected are terminal states. Re-selection is prevented by the UI; the database preserves the audit trail.</text>
+</svg>
