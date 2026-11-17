@@ -7,9 +7,6 @@
     "backend",
     "frontend"
   ],
-  "engines": {
-    "node": "22.x"
-  },
   "scripts": {
     "install:all": "npm install",
     "db:start": "node scripts/start-mysql.js",
