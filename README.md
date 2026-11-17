@@ -143,6 +143,29 @@ Open **http://localhost:5000**.
 
 ---
 
+## Demo mode (no database)
+
+On Vercel the API automatically runs in **demo mode** with an in-memory dataset —
+no MySQL is needed. If you deploy a database later, set `DEMO_MODE=false` in the
+Vercel environment variables.
+
+Demo accounts:
+
+| Role | Email | Password |
+|------|-------|----------|
+| Student | `student@demo.com` | `Student@123` |
+| Admin | `admin@demo.com` | `Admin@123` |
+
+Run demo mode locally with:
+```bash
+DEMO_MODE=true npm run backend
+```
+
+> Demo data lives in memory per serverless instance: logins always work, but
+> profile/application changes can reset when a new instance starts.
+
+---
+
 ## Deploying to Vercel
 
 The repository is already shaped for Vercel: `api/index.js` exports the Express app
@@ -254,6 +277,7 @@ DBMS Project/
 │   ├── src/
 │   │   ├── config/         # MySQL pool
 │   │   ├── controllers/    # auth, students, jobs, applications, predictions...
+│   │   ├── demo/           # in-memory demo API (no MySQL needed on Vercel)
 │   │   ├── middleware/     # JWT auth, validation, error handling
 │   │   ├── ml/             # logistic regression + train script + model.json
 │   │   ├── models/         # SQL data-access layer

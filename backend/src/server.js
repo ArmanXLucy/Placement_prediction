@@ -7,6 +7,7 @@ require('dotenv').config({ path: path.join(__dirname, '../.env') });
 
 const pool = require('./config/database');
 const apiRoutes = require('./routes');
+const { demoEnabled } = require('./demo/mode');
 const { errorHandler, notFound } = require('./middleware/errorHandler');
 
 const app = express();
@@ -22,6 +23,9 @@ app.use((req, res, next) => {
 });
 
 app.get('/api/health', async (req, res) => {
+  if (demoEnabled) {
+    return res.json({ success: true, status: 'ok', database: 'demo', mode: 'in-memory' });
+  }
   try {
     await pool.query('SELECT 1');
     res.json({ success: true, status: 'ok', database: 'connected' });
@@ -35,7 +39,7 @@ app.get('/api/health', async (req, res) => {
   }
 });
 
-app.use('/api', apiRoutes);
+app.use('/api', demoEnabled ? require('./demo/router') : apiRoutes);
 app.use('/api', notFound);
 
 // Serve the built React app when it exists (npm run build in frontend).
@@ -55,7 +59,10 @@ function start() {
   const server = app.listen(PORT, () => {
     console.log(`[server] API listening on http://localhost:${PORT}`);
     console.log(`[server] Health check: http://localhost:${PORT}/api/health`);
+    if (demoEnabled) console.log('[server] Demo mode: in-memory data, MySQL is not used');
   });
+
+  if (demoEnabled) return server;
 
   pool
     .query('SELECT 1')
