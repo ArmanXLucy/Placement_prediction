@@ -151,8 +151,32 @@ as a serverless function, Vercel builds `frontend/dist` as the static site, and
 
 ### 1. Create a hosted MySQL database
 Vercel functions are stateless, so the local MySQL in `.tools/mysql` cannot be used.
-Create a hosted MySQL 8 database (Aiven, TiDB Cloud, Railway, Clever Cloud, …) and
-import the schema from `database/`:
+Create a hosted **MySQL 8** database (Aiven free plan, Railway, Clever Cloud, …).
+Use real MySQL — MySQL-compatible services without stored procedures/triggers
+(e.g. TiDB) will not work with this schema.
+
+Then point `backend/.env` at it (this file is gitignored) and let the setup scripts
+create the tables and demo data:
+
+```env
+DB_HOST=your-host
+DB_PORT=your-port
+DB_USER=avnadmin
+DB_PASSWORD=your-password
+DB_NAME=defaultdb        # use the database your provider created, or placement_db
+DB_SSL=true              # required by most hosted providers
+```
+
+```bash
+npm run db:setup   # creates/uses DB_NAME, applies schema, views, triggers, procedures
+npm run seed       # demo users, students, companies, jobs, applications
+```
+
+`init-db.js` honours `DB_NAME` and `DB_SSL`, so it works against the provider's
+existing database (e.g. Aiven's `defaultdb`) without hand-editing the SQL files.
+The trained model (`backend/src/ml/model.json`) is already committed.
+
+Alternatively, import the SQL files manually with the `mysql` CLI:
 
 ```bash
 mysql -h <HOST> -P <PORT> -u <USER> -p <DB_NAME> < database/schema.sql
@@ -160,10 +184,6 @@ mysql -h <HOST> -P <PORT> -u <USER> -p <DB_NAME> < database/views.sql
 mysql -h <HOST> -P <PORT> -u <USER> -p <DB_NAME> < database/triggers.sql
 mysql -h <HOST> -P <PORT> -u <USER> -p <DB_NAME> < database/procedures.sql
 ```
-
-Seed data and the trained model (`backend/src/ml/model.json`) are already in the repo.
-To seed a completely empty database you can point `backend/.env` at the hosted
-database and run `npm run seed` locally. If your provider requires TLS, add `DB_SSL=true`.
 
 ### 2. Import the repo into Vercel
 1. Push this repository to GitHub/GitLab/Bitbucket.

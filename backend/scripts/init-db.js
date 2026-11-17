@@ -52,16 +52,32 @@ async function main() {
   const user = process.env.DB_USER || 'root';
   const password = process.env.DB_PASSWORD || '';
 
-  console.log(`[db] Connecting to MySQL at ${host}:${port} as ${user}`);
+  const dbName = process.env.DB_NAME || 'placement_db';
+  const useSSL = /^(1|true|require|required)$/i.test(String(process.env.DB_SSL || ''));
+
+  console.log(`[db] Connecting to MySQL at ${host}:${port} as ${user} (database: ${dbName})`);
   const connection = await mysql.createConnection({
     host,
     port,
     user,
     password,
-    multipleStatements: false
+    multipleStatements: false,
+    ...(useSSL ? { ssl: { rejectUnauthorized: false } } : {})
   });
 
   try {
+    // Prefer the existing database (hosted providers usually pre-create one).
+    // Only create it when it does not exist and the user has the privilege.
+    try {
+      await connection.query(`USE \`${dbName}\``);
+    } catch (err) {
+      if (err.code !== 'ER_BAD_DB_ERROR') throw err;
+      await connection.query(
+        `CREATE DATABASE \`${dbName}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci`
+      );
+      await connection.query(`USE \`${dbName}\``);
+    }
+
     for (const file of FILES) {
       const filePath = path.join(DB_DIR, file);
       if (!fs.existsSync(filePath)) {
@@ -71,10 +87,13 @@ async function main() {
       const statements = splitStatements(sql);
       console.log(`[db] Applying ${file} (${statements.length} statements)`);
       for (const statement of statements) {
+        // The database is selected above; ignore the schema's hardcoded DB name.
+        const withoutComments = statement.replace(/^\s*(--[^\n]*\n\s*)+/, '').trim();
+        if (/^(USE|CREATE\s+DATABASE)\b/i.test(withoutComments)) continue;
         await connection.query(statement);
       }
     }
-    console.log('[db] Database is ready: placement_db');
+    console.log(`[db] Database is ready: ${dbName}`);
   } finally {
     await connection.end();
   }

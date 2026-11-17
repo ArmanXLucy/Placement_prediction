@@ -21,7 +21,13 @@ function errorHandler(err, req, res, next) {
     message = 'Record is still referenced by other data';
   } else if (err.code === 'ECONNREFUSED') {
     status = 503;
-    message = 'Database is not reachable. Start MySQL and try again.';
+    message = 'Database is unreachable. Check the DB_HOST/DB_PORT/DB_SSL settings.';
+  } else if (err.code === 'ER_ACCESS_DENIED_ERROR') {
+    status = 503;
+    message = 'Database access denied. Check DB_USER/DB_PASSWORD.';
+  } else if (err.code === 'ENOTFOUND' || err.code === 'ETIMEDOUT' || err.code === 'EHOSTUNREACH') {
+    status = 503;
+    message = 'Database host is unreachable. Check DB_HOST and the provider firewall.';
   }
 
   if (status >= 500) {
